@@ -1,0 +1,43 @@
+<%include ../header%>
+<script src="socket.io.js"></script>
+<link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+<style>
+body {
+        padding-left: 25%;
+        padding-right: 25%;
+        background-color: #272f3b;
+      }
+</style>
+<body>
+<h3 style="color:#f5f5f5">Grid Color Codes</h3>
+<p>
+<span style="color:#ff3300;margin-right:12%;">Buried Mine</span>
+<span style="color:#e68a00;margin-right:12%;">Surface Mine</span>
+<span style="color:#00ff99;margin-right:12%;">Empty Cell</span>
+<span style="color:#0099cc;margin-right:12%;">Current Cell</span>
+</div>
+<table class="table table-sm table-dark" id='Table_Buried'>
+  <thead>
+    <h1 style="color:white;margin-top:10%;">Buried Mines Vector Representation</h1>
+    <tr>
+      <th scope="col">Column</th>
+      <th scope="col">Row</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<table class="table table-sm table-dark" id='Table_Surface'>
+  <thead>
+    <h1 style="color:white;margin-top:10%;">Surface Mines Vector Representation</h1>
+    <tr>
+      <th scope="col">Column</th>
+      <th scope="col">Row</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+</body>
+<script><%include tableLogic.js %></script>
+<%include ../footer%>
